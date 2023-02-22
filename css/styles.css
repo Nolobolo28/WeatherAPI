@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  font-family: "montserrat";
+  background: #042326;
+}
+
+label {
+  display: block;
+}
+
+h1 {
+  color: white;
+  margin: 2rem;
+}
+
+#main-div {
+  margin: 2rem auto;
+}
+
+#city-input {
+  background: #0f5959;
+  border: 1px solid #1d7373;
+  border-radius: 5px;
+  height: 30px;
+  color: white;
+  padding: 10px;
+}
+
+#city-input::placeholder {
+  color: #c4c1c1;
+}
+
+button {
+  background: #0a3a40;
+  color: white;
+  border: none;
+  padding: 8px;
+  margin-left: 5px;
+  border-radius: 5px;
+}
+
+button:hover {
+  background: #3da895;
+}
+
+#display-div {
+  margin: auto;
+  text-align: center;
+  display: none;
+}
+
+#city-info {
+  font-size: 1.5rem;
+  margin: 2rem auto;
+  color: white;
+}
