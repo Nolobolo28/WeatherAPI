@@ -1,4 +1,4 @@
-const apiKey = "2cef62b7a417e7f6608a4536b3206846";
+import {apiKey} from "./apikey.js";
 const form = document.querySelector("#my-form");
 const mainDiv = document.querySelector("#main-div");
 const image1 = document.querySelector("#img1");
@@ -19,12 +19,11 @@ function getCity(ev) {
 }
 
 async function getTemp() {
-  const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial&lang=english`;
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey.key}&units=imperial&lang=english`;
   let response = await fetch(url);
   let json = await response.json();
   temp = json.main.temp;
   src = json.weather[0].icon;
-  console.log(src);
   displayInfo();
 }
 
