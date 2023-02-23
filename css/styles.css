@@ -60,3 +60,12 @@ button:hover {
   margin: 2rem auto;
   color: white;
 }
+
+footer {
+  margin: auto;
+  padding-right: 3rem;
+}
+
+p {
+  color: rgba(255, 255, 255, 0.493);
+}
